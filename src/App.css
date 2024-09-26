@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
+.category-section {
+  margin: 40px 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.product-section {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  align-items: flex-start; /* Ensures the top alignment of the items */
 }
 
-.App-link {
-  color: #61dafb;
+.product-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+  margin: 10px;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  min-height: 350px; /* Adjusted height to ensure uniformity */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.product-image {
+  width: 100%;
+  height: 150px; /* Fixed height for images to align properly */
+  object-fit: contain; /* Ensures images fit inside the box without stretching */
+  margin-bottom: 10px;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 30px;
 }
